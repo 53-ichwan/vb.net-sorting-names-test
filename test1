@@ -1,0 +1,37 @@
+Module Module1
+
+    Sub Main()
+        Dim i As Integer
+        Dim name (11) As String ("==== arry ====")
+
+        name(0)     = "Orson Milka Iddins"
+        name(1)     = "Erna Dorey Battelle"
+        name(2)     = "Flori Chaunce Franzel"
+        name(3)     = "Odetta Sue Kaspar"
+        name(4)     = "Roy Ketti Kopfen"
+        name(5)     = "Peta Madel Bordie"
+        name(6)     = "Selle Bellison"
+        name(7)     = "Leonerd Adda Mitchell Monaghan"
+        name(8)     = "Debra Micheli"
+        name(9)     = "Hailey Annakin"
+        name(10)    = "Leonerd Adda Micheli Monaghan"
+        name(11)    = "Avie Annakin"
+
+
+        Console.WriteLine ("====before sorting====")
+        For i = 0 To (name.Length - 1)
+            Console.WriteLine(CStr(i) + ". " + name(i).ToString())
+        Next i
+
+        Console.WriteLine()
+        Console.WriteLine()
+
+        Array.Sort(name)
+        Console.WriteLine("====after sorting====")
+        For i = 0 To (name.Length - 1)
+            Console.WriteLine(CStr(i) + ". " + name(i).ToString())
+        Next i
+        Console.ReadKey()
+    End Sub
+
+End Module
